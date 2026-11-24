@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/gabriela-ballerini-web-nueva-propuesta/">
+<!-- BASE:END -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="theme-color" content="#252225">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+
+<!-- SEO Meta Tags -->
+<title>Gabriela Ballerini | Coaching ontológico, workshops y empresas</title>
+<meta name="description" content="Gabriela Ballerini, Coach Ontológica Profesional. Sesiones individuales, el workshop Despierto tu poder interior y capacitación para empresas." />
+<meta property="og:title" content="Gabriela Ballerini | Coaching ontológico, workshops y empresas" />
+<meta property="og:description" content="Gabriela Ballerini, Coach Ontológica Profesional. Sesiones individuales, el workshop Despierto tu poder interior y capacitación para empresas." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Gabriela Ballerini | Coaching ontológico, workshops y empresas" />
+<meta name="twitter:description" content="Gabriela Ballerini, Coach Ontológica Profesional. Sesiones individuales, el workshop Despierto tu poder interior y capacitación para empresas." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mwtlntut-7oejc-copy-1795460324664";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.orkestic.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=9722');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='n2rWVgpt';
+  var apiBase='https://app.orkestic.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='n2rWVgpt';
+  var apiBase='https://app.orkestic.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Ir al contenido</a>
+
+<div class="promo">Workshop de tres días <strong>Despierto tu poder interior</strong> · Próxima fecha por anunciar · <a href="https://wa.me/543875916465?text=Hola%20Gabriela%2C%20avisame%20cuando%20abran%20las%20inscripciones%20del%20workshop%20Despierto%20tu%20poder%20interior.">Avisame cuando abran las inscripciones →</a></div>
+
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#contenido" aria-label="Gabriela Ballerini Coach, inicio"><span class="brandlogo" role="img" aria-label="Gabriela Ballerini Coach"></span></a>
+  <nav class="menu" id="menu" aria-label="Principal">
+   <a href="#experiencias">Experiencias</a>
+   <a href="#pilares">Lo que trabajamos</a>
+   <a href="#sobre-mi">Sobre mí</a>
+   <a href="#eventos">Eventos</a>
+   <a href="#ebook">Ebook</a>
+   <a href="#empresas">Empresas</a>
+   <a href="#contenido-redes">Contenido</a>
+  </nav>
+  <a class="btn" href="https://subscribepage.io/SesiondeCoaching">Empezá ahora</a>
+  <button class="burger" aria-controls="menu" aria-expanded="false">Menú</button>
+ </div>
+</header>
+
+<main id="contenido">
+
+<section class="hero dark" data-section="hero">
+ <div class="wrap hero-grid">
+  <div class="rv">
+   <div class="eyebrow">Coaching ontológico y desarrollo personal</div>
+   <h1>Volvé a confiar en vos y <em>construí</em> una nueva etapa.</h1>
+   <p class="lead">Te acompaño a entender lo que viviste, recuperar tu capacidad de elegir y volver a poner energía en tus decisiones, tus vínculos y tus proyectos.</p>
+   <div class="actions">
+    <a class="btn" href="https://subscribepage.io/SesiondeCoaching">Consultá por una sesión</a>
+    <a class="btn ghost" href="#eventos">Ver próximo workshop</a>
+   </div>
+   <div class="signature">
+    <div><strong>Sesiones</strong>individuales</div>
+    <div><strong>Workshop</strong>de tres días</div>
+    <div><strong>Empresas</strong>equipos comerciales</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="experiencias" class="section" data-section="experiencias">
+ <div class="wrap">
+  <div class="row-head rv">
+   <div><div class="eyebrow">Experiencias que transforman</div><h2>Elegí cómo empezar</h2></div>
+   <div class="arrows"><button type="button" data-dir="-1" aria-label="Anterior">←</button><button type="button" data-dir="1" aria-label="Siguiente">→</button></div>
+  </div>
+  <div class="slider" id="slider">
+   <a class="xp" href="https://subscribepage.io/SesiondeCoaching"><img src="https://app.orkestic.com/objects/quick-uploads/2033/8fd6ae5b766c5075.jpg" alt="" loading="lazy" style="object-position:center 15%"><div class="in"><div class="tag">Uno a uno</div><h3>Sesiones individuales</h3><p>Un espacio propio para revisar patrones, ensayar límites y recuperar confianza en tus decisiones.</p><span class="go">Quiero una sesión</span></div></a>
+   <a class="xp" href="#eventos"><img src="https://app.orkestic.com/objects/quick-uploads/2033/2f87455f8cbfdb93.jpg" alt="" loading="lazy" style="object-position:72% center"><div class="in"><div class="tag">Presencial · 3 días</div><h3>Despierto tu poder interior</h3><p>De viernes a domingo para trabajar la confianza y diseñar tu próximo paso.</p><span class="go">Conocé el workshop</span></div></a>
+   <a class="xp" href="#empresas"><img src="https://app.orkestic.com/objects/quick-uploads/2033/a6a26ac39c7bef12.jpg" alt="" loading="lazy"><div class="in"><div class="tag">Para empresas</div><h3>Ventas Inteligentes con Coaching e IA</h3><p>Formación para equipos comerciales: escucha, prospección y cierre con claridad.</p><span class="go">Capacitá a tu equipo</span></div></a>
+   <a class="xp" href="#contacto-charlas"><img src="https://app.orkestic.com/objects/quick-uploads/2033/726a41967d7835ac.jpg" alt="" loading="lazy"><div class="in"><div class="tag">Instituciones</div><h3>Charlas y conferencias</h3><p>Encuentros para cámaras, organizaciones y comunidades que quieren crecer.</p><span class="go">Consultá disponibilidad</span></div></a>
+  </div>
+ </div>
+</section>
+
+<section class="section dark band" data-section="cta">
+ <div class="wrap rv">
+  <div class="eyebrow">Tu próximo paso</div>
+  <h2>De lo que viviste a lo que elegís construir.</h2>
+  <p class="lead">No se trata de olvidar. Se trata de volver a escucharte, decidir con claridad y avanzar a tu ritmo.</p>
+  <div class="actions" style="justify-content:center"><a class="btn" href="https://subscribepage.io/SesiondeCoaching">Empezá ahora</a></div>
+ </div>
+</section>
+
+<section id="pilares" class="section" data-section="pilares">
+ <div class="wrap">
+  <div class="rv"><div class="eyebrow">Lo que trabajamos</div><h2>Seis pilares para tu nueva etapa</h2><p class="lead">Cada proceso es distinto. Estas son las áreas en las que más acompaño.</p></div>
+  <div class="pillars">
+   <div class="pillar rv"><div class="n">01</div><h3>Autoestima</h3><p>Volver a valorar tu mirada y lo que sentís.</p></div>
+   <div class="pillar rv"><div class="n">02</div><h3>Límites</h3><p>Ensayar el "no" sin culpa y cuidar tu espacio.</p></div>
+   <div class="pillar rv"><div class="n">03</div><h3>Identidad</h3><p>Reencontrarte con quién sos más allá de la relación.</p></div>
+   <div class="pillar rv"><div class="n">04</div><h3>Decisiones</h3><p>Recuperar confianza en tu propio criterio.</p></div>
+   <div class="pillar rv"><div class="n">05</div><h3>Vínculos</h3><p>Construir relaciones que te sumen.</p></div>
+   <div class="pillar rv"><div class="n">06</div><h3>Proyectos</h3><p>Volver a poner energía en lo que querés crear.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section rose" data-section="testimonios" hidden>
+ <div class="wrap">
+  <div class="rv"><div class="eyebrow">Testimonios</div><h2>Lo que cuentan quienes ya empezaron</h2></div>
+  <div class="quotes">
+   <figure class="quote todo rv"><p>Espacio para un testimonio real de una persona de tus sesiones.</p><figcaption class="who">Nombre o inicial · Sesiones individuales</figcaption></figure>
+   <figure class="quote todo rv"><p>Espacio para un testimonio real de una persona del workshop.</p><figcaption class="who">Nombre o inicial · Workshop</figcaption></figure>
+   <figure class="quote todo rv"><p>Espacio para un testimonio real de una empresa capacitada.</p><figcaption class="who">Nombre, cargo y empresa</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section id="sobre-mi" class="section" data-section="sobre-mi">
+ <div class="wrap">
+  <div class="about">
+   <div class="about-img rv"><img src="https://app.orkestic.com/objects/quick-uploads/2033/c6b897017437a36e.jpg" alt="Gabriela Ballerini en un retrato de estudio con blazer negro" loading="lazy"><div class="badge"><strong>Coach Ontológica</strong>Profesional · Supervisora de Conversaciones</div></div>
+   <div class="rv">
+    <div class="eyebrow">Conocé a Gabriela</div>
+    <h2>Acompaño a personas que quieren volver a elegirse.</h2>
+    <p class="lead">Soy Gabriela Ballerini. Trabajo con quienes están intentando entender una relación dañina y con quienes ya quieren volver a poner energía en sus decisiones, sus vínculos y sus proyectos.</p>
+    <p>Mi forma de acompañar es cálida, firme y esperanzadora: con herramientas de reflexión y acción, preguntas concretas y respeto por el ritmo de cada persona.</p>
+    <ul class="creds">
+     <li>Coach Ontológica Profesional.</li>
+     <li>Supervisora de Conversaciones en la Formación de Coaching Ontológico Profesional, Facultad de Medicina, Extensión Universitaria, Universidad Nacional de Córdoba.</li>
+     <li>Directora de ARGEM Consultora, donde capacito equipos comerciales.</li>
+    </ul>
+    <div class="actions"><a class="btn" href="https://subscribepage.io/SesiondeCoaching">Agendá tu sesión</a></div>
+   </div>
+  </div>
+  <div class="trust rv">
+   <span class="t">Espacios donde compartí</span>
+   <b>Universidad Nacional de Córdoba</b>
+   <b>Cámara de Comercio e Industria de Salta</b>
+   <b>Cámara Argentina de Capacitación</b>
+   <b>ARGEM Consultora</b>
+  </div>
+ </div>
+</section>
+
+<section id="eventos" class="section rose" data-section="eventos">
+ <div class="wrap">
+  <div class="row-head rv"><div><div class="eyebrow">Próximos eventos</div><h2>Viví la experiencia en persona</h2></div></div>
+  <div class="events">
+   <article class="ev rv">
+    <img src="https://app.orkestic.com/objects/quick-uploads/2033/92e0eda0752810cd.jpg" alt="Participantes durante un encuentro de Gabriela Ballerini" loading="lazy">
+    <div class="in">
+     <div class="chips"><span class="chip">Presencial</span><span class="chip">3 días</span></div>
+     <h3>Despierto tu poder interior</h3>
+     <div class="meta">Viernes a domingo · Salta · Fecha por anunciar</div>
+     <p>Trabajá la confianza, revisá patrones y diseñá un próximo paso que puedas llevar a tu vida cotidiana.</p>
+     <a class="btn" href="https://wa.me/543875916465?text=Hola%20Gabriela%2C%20avisame%20cuando%20abran%20las%20inscripciones%20del%20workshop%20Despierto%20tu%20poder%20interior.">Avisame cuando abran</a>
+    </div>
+   </article>
+   <article class="ev rv">
+    <img src="data:image/webp;base64,UklGRuYzAABXRUJQVlA4INozAADQSQGdASpYAlIBPwF2sVKrJy8vqNQrqfAgCU3Y5hnVzUUi3kTR7P2zXAWU/wnm4e/f9XlZ9gu5F/sXRJOWrahrtcVfwuU8wEYB/nOMzxd/kui3xKDbeql7qKJ4rJ23N5hCezad+ys0D+cAp8QL8RMq+A0viJCihJbWqvEJcVfVyS6xdYW8ZvVsWwMem5FBt2Ba2PP1kQMf6ySvaZ9Q3a6UEOJDM9BP+7GHtgzgcc+BZGNcgDx+86xICc3V22BJTDwoD4p3Ub2aJ5UJCFbVO480ICWpVqZ2jEL6MXj0nbVKpdRbe9bJk/JiB+KoWNps2WgvtvUV/95F8ATiDBDmll11wFQE+1PNYIuZ7FUD39TZZ2LARBa7DNcrzP6V8LB/br7ne3gJaa35ObWOcvGdr3EeYPOzCpcRu2Nr2UcMLpE4+pbYwAgEZibAtwZkIIgZB2LYr/Xe+SqEGvcJZcIVYblqfs1+fPaV1ZrrDycO2sGwsHFtWDKAcQRfZogqU4XFTOgWOcI8tqZgGIRfU2FcWuAkEmfkLf43D1+6o+KXVG3G5AY9sXOJTrl/tfgSlQryj/9qCdEdqCU7f+D/noQIwsrDMVQPFLwn1Ddu/UwgVBm9C1iKSpb6XB+DEO3LFUaifNZoSj8nLOB21GZ2tgOymAjb9ZhnSXpoV4bzN5jdWxf6kZtGPHrd86nTF06RscCuuoyrWHCWVZcVyLW/jKr7/B2wqzQPhdk8SVFXRWImCzJijkqfAHTZvh6LvWqlC4qScaxN9w9pulX7LS50Yo6FerVP4gSwbT35gjhaWmG7C6x5t8BTfhMdQgwxGIGt+4OBGxoMDjfHWlasaksBPtn2196LGB1ICB6BDGJxVyxh5zeXj/12YI0jlksCDhY1Nn2Mi2Xo/t5DWToYiylD258NdSyI41TjqRuT3ShsuJ4Myk0cXrPn5h9eKLagoTgpRTRsDQaJwhM4eft405dBTFfnTcruOH/+ywIZWbQMQBE76YpqaWzDhdQl5edOQ4tBE1pSZayZN5CW0rFmYDifTrxe5a8xL5HHuNS+QVlmx0nmXf+YvPPb3c3MML110+gKe7N8jILiHKvYvfIWrodyTDC2IbQuhsuhymsp3HFAbfTZ2FDCSB8l7F2Pk/XljuqHvRRnQWAN7qFKApKrmCBmYZl6oSdlqO/4R3d3myXcxUxhxvCe3uANE+8CndWC+cWtaS9OS37wo63DXtiQ3d9inqAsU7qesou2IigXSOBJDZiOR+8qAAyWq1vretzhbOfo6+HLE9jZxsaeWAyfCzYrrYwPbH/nJ1AkB/4IiQdgiWRp3h7SRwTh0V9ibxLr5BnORrYqdQf24hPKg//YO82182bmr8L/BU+i6M7LUkP/89T2ARYKtKcMT8sDf9EZ+G6uo8x2jfFOIu6LJidRS0mNIV/exGMpPHno01A4S6jyuanBqh5X1vJxNqnNSdF/C7psevuOYK9EoNWgXY6BieAWsZhkyhdzbmMoRwO9UwcGYSF+KjTRz5fC5dSW3pfFwxBSjHD6tyGwQHwImkjWYhUyWXu3DfttIX6E93CZzlR2RcSgCGutcIUaeB1hfYQ8ayC1qGSmRrqTPOOeww9dMCk5PdJlyWOPprZIFR2guFbBnFsGI79P0ZZ0ksnrhGxPY7mtM632GCQOUs/u+XXOMwiqwVSIQlSPRXEOgKmDprhggK4y7vEirpDUMEz1yWNS5ZA2yBsBNrMqRtToQnQHMq6E2tRXmUbbBDvunv+tvChP55XriOyRd6wjFgNxfWEhvKMA/89XSWzEw069pJ1ncrWuQKzujgcg7XHEPVSu3/wyqygShzyaK6JMaBLJh8GV75FKnq0v2qiM+3kA48F3bQ0s8nx4Pgl4ZScYz6Ed4j8d34lmn/m0k2e3TqBvxMYmzVc+K75dTDbppO6us8HZCbgVmOeHbVjxKiiwp/Vc5mX09lGzlzPjmX6sVud2Q3Mdqd/lirOH+UG8G3yT3iw3ZTie8aaEbZRfw1GurIrrFoJOPEfyMDrkq43Fxa+9bJMuaxgw3JHZ6olzmpShvoDzHn1HNOnCWtHGAeZ7isCXXGYUG6ZSmiVCf4gbCLL3QKgG2YYiEFS0uQbPTDCZDOdbs+am1x036uUHf+2qzXifb/L9ZarqwMZusyAANyAJEtS8O1t6gN1q5bNGT5AKl4Ep9C2iep3say2WGdrK/CmN0fo5ji0wk7X5cOxdA3HjG7O4HXdgu0DRgO6ORI1Ugab1nCcc0CQYDMqu6OmnLn97nJBFy37oyM6xEtDHG6IAs/WU3auX78UfkhwxZG9qCyEcYB8L7P5JpRqNUbJdU2sVDafxT0TzafT85KqptBcmPefvkOyeH+PGn1vgtTt9fR9q6a6tTIrLVERfRomgbW/x3YV3tTRZHfxNN6X0Vp0xBdW/KqddinHMwqkucQft93rfWzeQKsiG4JA3e9uDr7DXsbcA6qcMyUHuaFYaQdQ0fFghiqenPPMmtpwRC9bTfeHwyIY2UZHoDo8MDRMbIddZXPGLG8lwJDbyXbwYcaGGC7o1kxSDFmszVjbtbUDj3VuA4NJ/3B7HX7XVR7AHNL08R+WEU6oamI49F2gqhn66cvmMcxcIuJc+2rnGcSZLvS9xFpobOmIdxnHAdmVdR800HowklNm6uQkQluurdO1/7GUOjPIafm1l8eDQ0AxPxaLv2XNVSMvflgU8uRRLyZ9FvIJdMZ/KvmzHvdC2NUx1EcufC/zh9LkziJ3A4bxscDcDyIQRmDLCTJhaM+WvJjuXPCtKpgHwMQ7MfH6TAootAxq07CUemdpl02H2FPaHn6ufoODZadiuG2wbTaW3X/BiXrW7TBGihdceRZd50PpXDgybUPOVwNcfHrstgrXeqRgsH+Exc5hK/VEx5l1RV9BIrODBbL3AsYYz+QO7U4mZTbaU33uEeOJ0151ev3Hin6JHdX5h6A0pdM455bpefUsgjyw8/gtW/RQ1woSaH/5sYMpvHjSTH98ZalY3IhNbRje1xT5kOx2SdtwH0O5awxdJbeQly7eCiiQyA3maPSbMaDmM0xvu+HasCZb+G/aaYR0MW9qq80v77Ak20jsUSsIMxdTCGQUJLXEv6T3HY2ev8zfhKB1+Ib7Al9/u0haDnDv8clj5bak2FwdXTqKzMMbgBTtvNrdkGC1vOLC4PoUhU6NYaASQIU9o5KBS+TSt1yNHQqoo6n+Oi4vKHAuMH1uyrU0BzUlsYgvhbrmpMxTDmGe7NXgqnhFhqLsQ3wRHYzlubqE4NJkfq4Gup+w4tB+7Pi0VI3Res1B+QZ5qaZBl7DL2u3v5ClkIE6yVUMSW7ggL/nztVmkFgLzaIOlqmKs/QmxrZ16QTiUNOeQ1WozhMpH6qFsRDAcuothYWbR09vv0wld0y4AOehvpRGWd04Fw07P046sLa9vLW8eQcXWxmmHxnmWjiI87OBrn7BUqCa8ls6AGWm7v26SePRbA+dQ8cq3vR2v0+kUeSu3cNh9rCtPZXRdplnsU60gqGua1m5EAAP6KBJ5Qj9vkSoYem+UlO4gf1RQyBb9QvaDK2QH2rWAPDsWyvblgrKPhOR/mF7w1LQm2Ia/CQ3+tiZZ0DpyVSaiUvh683W8ZAJQ031dRyzvctO0bEC13XyqQt1GvOrKZkDoF0MHhKiC4y3E283iqaHSU3wDcgirv98NBMpcIat7TVINTuhKZvpDXHZyYMRG03AC/NsK+xMwhpajjk2jqXBdDHSjdy1vgyxxjVOkbmcZLbKqZpVkge4HJwFAt2ZDBn+HoegYLRt6ZldrSYTzcElqtwzXqKvzELguoWhMVKGgQM5PyE1emmMrWTqIgE7yUfrp17e/09DRX2+2RVN31iRwqFTUbm+A9WCrjG7bEscuR7jBwcwDIHIPqgAWbRZ1Fq3Y95oyFbdqFE60OpyEhU7QD0d0Ta2G5nuSnt97hXZnHXRNzRC1utu8sEBYMYFc6PyIGBbKJ89P/qVo2YiM8jO3QQW7CwB9Z29+uMhkGvWbaQXTm8xzdEbEKuBap0N6M0DoA7ODKe7glHkliKncmrJTc6pbSlgYGkw0QkjSU7csPmrPWvbdIhJ7U0ZwkjMIp/jFWT+TXmqb5ze3YJnj2g3IvXUgzqmPOgnaIGhgA9CWgG41/z6Y3Zr2n5Qh7hxs4fyyl9s8qABY4+n10a6PHFX+06TYM/Y0sve6NuEh0oFn0zxYvj59NCdmwwNWA6OqGRTZ8yxsetcPZ8137F3KTZtLjA+Zorxqc4xipOEk1BcCGAr08fpKZGAOiw34jNFpMsYeObtkvzAJft+v+oR1nwMbhvvLPg/b54Iaj7MjrepyZpFFO0Jn+yIUG8zDGOjmg0hxK/XD4HRVDlvWVFx5YUVvhyOHIHvsJHOM/JiKKdoHmh5fZdzStLdhT/ZLKgFkdLaAdGLqNv89aEfJFg7yBd7YD6Wa0XVU1g4+LeziDJm2tgg57pq1V+/yelQa1bv4A2u1Ks6aMqOgV+QDGZDbbWsdxw0S6NfijmDIzwO0a2FejjNodBzBwd4F7tw/aAUH2V4GLCecnir02+chhMljF/7/IpMp2tRDQd5B+pAHdHPU185gYkH98WYfC2S+y0pYV4SHnJg3IdOktpZ9rXbZpwi8igEQ31GpQneMLEtrDDX8G2mjy+xVX4WaHjcTg322nrsWMCgWb2bSvmZgxU49iL90chRB4GEu+zdtrr5R5tpmXZ5G5bVLgipNVxf6jYu56OEoPEinGfkVMBp/SX1EjQdl038y4FBmRfbfgR/wMjnYl3w//0vK1KYU0rBlqICq2eMxRt+a5u/PFv+8zaQOrkGxVS+mpShC6syVlRXp6F/IRjVotmCMbAvZFJ3jJSedz8gNFZ3fbRs3320KumE8vS/hc17WFRwso7f+wx21tP7WAVV2IPYE57h4DJagm79fvGFJ67zzsUCwf+V4msdXSiEHTCvUyJgOsvswVkOmThzyYWmQ5m3G+LNxYSz9gOWsTySK/glryhgnPe0qjPyo50g7qWioMO1IccTxjzdiE8w+YUo1MWguTpcLZIu5zIyMkvEfo9FPZWm0xZclL138iM0vpt+d64FYeo0VWc5+vqVv+qBrYhcYL2A5yVisKlzorwEzUSCvYGJnyouLY/cciB79eL/vcBnKkHGC9rUaDcOkd2pI1A5K61j8fzJdAoFz24BCyv4HwipEmVfryWYWnTRCcQbkvhU6x16Yfzrq8sA3iYu0vNCYhq4Gmm3LoOWNLhIA6wf5lZB18bMtWYFDJNQD0mI6j7HWdNQzIO3oeCZPciTFCH5iEu6A1Zr5Z0TgJYR8IeDDSCrUEDnzVfkR6zJXIFCbA8OOs9k5Ty+8jsAAH9wHXMB0iFnpQjgrewER1jCbq8eGnkK8g6fGpOMQGuHS1+lEYIFxeWnI8vKfAJwPjumbFwJzsSWgoeEmEN8ytliQoXp1cItatcso2V5nJHVPALAzl12vNVfYpB9p0AL2fdl1gcwET/n+p6BQxrNpZ/Xn+/IKma8f77+mxbEzFKPR+QnhJ/SeGpSteC9nks2urIKnuPajjZ+zKSFHZmkpWVLi6UBitcUmFC274OMEFh7R2+4FhN2C2JW+tRNpehOVr+/HzISXD+lybDJbH8TQ2uQvVOAzwlinltip8FLLXwZmeO+jwYGCWzF2TBIHEG1sNzG9gDaNhNZoPmoN6cEOOZFzIPToPzmffcyiKdr3ACYuioea+woluxzOvBwaEnl48+8KTi8lXJ2GG6Z0fm/tA05dWcSqeySPjk6p4Ac5H6SeoyvbfkRcyOYye4okg0/l3WguCGWnLPLzNXThtbZIbjpvNkfHpQGRXN8xN2mnIwyWSJe27cnoyTjlEk2JjR9DdJdm+k2TASIuTqm+y3K/c9CrlsaSlIRly1DzERQn/nAHAhiv4j0mTwbCwflMby22PNuyXsjLP/1tANItUh4sWclC3qIQHh6UaO5w9Qz0j83mfnTB2wV1ZrGuCXK8Je2w7Ny9MZJrB8NZaE+5sG7x0WM4WL+Db/npzJTTXeta3Ytbkv38NbEbROfuZrwygVNA4JgZ9wNx/lILoDdSKCw1RhPYIMKEiKwj6XxxANQg2Od9dYrBJDz0uwitRFK9BVBi2/kHQO5EqDsj8IIs4+AFZ4bCENH1mcrjWwvJpzIjZgMBsDRfFJynvrhBjGraSMPSe8Nmd6wxui3hLulAP8dXiTM7U8Gz7XOnwcabiHoHEosD8zodgM4Pb+M2/3iYkhOThwDF1/1gJwXYK58idfw6PIBWqMBeNqtK/yuPIuuOQN1WTfztjKg62CaJ0O8Pxn7ovBYcfRKeI+UDOdPfaBi/xwsD4y0L2Ui3bWtTmgW94Ld7L2DEzvTcEONjt1Dp7cWT1bi5w/R6Wyr7qL3cQn0OucI2Tjws9Pv77kTb2QniKrHcWbrUFQ5oAcU09ZbjLXQeOdVHQ74OlOKXCXM1xeHlMU2sauWvmefBlctKWtJL64GHCpbYyagdS85BCBUxVocXCycOCfNAuSJozpL+VjTCa16H1VPGYFEqL1dxLHeuitIOOEvjSE38dWqPNXNp6x5jMnN9SlIQfCIbLA0/Ylb2MV3nnUfDEMnbW2QxEnw5r2GVPl3ceOU3HfMnaDKD8qxD4qzR+Sb2EXX476fS3jZCkCn943OGdfpnJOkkoJ83y3J9GukHsUK3ti6QiQfRdp0bNnqpyMTtWAODQX1t3J6nBznQp6sAvVHS79Rp1dZb6NOr7lWJLipnabISpmF4MRjLKYUWJr22Li43Y57GivTLROVj7wODlNoQBfYvyoLhngN/yUvpKpA0v62aEU3rY83iDO3ri32oh8Y2ei03npak95b50VxtAQl/80/wqfTKhgf7zSCuTeaERb/3hi7hx6lVSXFzYdthzj8DePjfMPa5Zd8jqExzgUCd8CiQLaMQSwYPnl+26zbfjEfliCJLKb1t6BboUb06mWBPirzYRwxiSj+W3THQYPhICiNyTZ1YMAir+aoUOPYVotOMm+RHTd50Ovcxk4QfBC/v9cLbDeicBCGPP7DT3nMe7IGPYe558aVHHgxMj1F53nSURKyGaVKGuXhdQr9b2FMqRaAwiebJuRWcJWDXc+MrwUq+bZ6/sz5UEpmS9Rb0bHkCXGzvLcyI3umKcr3QGO4zZ49i9gkLNUoGmacKYAGMUr2IFV3CaoTY/PUL42lmBf/44YaF0lr/pjt8pcSSw4S2j1q64X5kQMcbdVINs6MAxggfskyBZ+BYY5I1RFvm90+t0Dc3dfwSsMZ4mt4fOxR2aM3fmjKI6tcolZBqWstcfdDWmpdFvU1Ee5ZtBPMHGTzW0uXha3UfiUX8LIvcdfE6YMlVaxpPkdrppe+J4syH0t515NcuG5zW1X4EdAtgY5Rx8PMBCemV6bTNF1ZpPBbq9cPVQPTWN283e2mcQTnBBTajYNVI3+UUDljDtFM2BpgqMGpjRd3fhUEBt+mHquxHalH3KTYM3MW894a+00AjO8Ipd3QNmrPma4iQBYO04Au/7/CbsjhkUf8Fm6LB7GC7aq1TE8IsIerjYcmydg9/tK7W9N1xpj5D64zRGA1NYA6F1co/fWrWCKVI/CUgyZNIc30AR6vZwafnI4oO1KecLvXafzo4XnqcfHIW1yklNVVg66bZJssi6NB6TRij4EPmCgVPhmAwRiYlnEjNgX+ijEznbP1eDTuJnHLl77E2f37EQaDY6JWYhA6sCMqBS8XNMYJfxq/70o53y1jaNBiqWeBEURPXrJV6bEZQNC2IMnrj0RA531i3Ts0sGitCUCTyXcXtBcXl95FfPMRnWGYiw/Eur97IvSDSsk9muE+0X1DoDZGb35j2GYUmASMZHoLhD0Bmo44bh+frnbhNiLWUsYE/kp9SNtZUsvOJY5EqCP0eutvhVj7+yl7QWNVjwcQ9VULddi2nb3pvi61bJR3mrwNRuzdfvVF+ekoofStlUFaJdGPZtvf3nWSBke1arRShuEqOwutGxzaeJ0/y2l1WVWokzhG8/nUGEXa7QgWlJfJLoblXnOHz0uv80Hg1ze416cYXfvQ6dfEkSaE47VBveWQ8Pa0RIPT5ugmOd+NkbBh/2zqBu8BY3WTHViYiGgZqam1t5uRx6Rlx3LpdteScSNIfcmBy1/1Kv3w4XPW723XvjtDh934gkj8L6GEpoIgmO+xGjXnREv5duEWUur2TL5lezOqMkXynBmvrAONip5Oprm6HRBbN0nBGVO8SBhlLRKUmYueElnowEOJZo119uK+LfGMDr7AlXO5rnBxUyw+7Dy21mwYlKY6ZhXnFE8YkG9uwjs8OTmd16ktxE1u6N1AMVvMuk2HnabEGfwZ3iUBeItBpcYtgetS95zedlwDjWNBqVB35BUyCBILU5xHSU7WBH5WHtq3ify1n/S24JVZAKccSbgzMVpKJ0gTxttwR5CQHXlc3fTkB6p+BscfzCNa02hv+wx7lnWOLgS9ZpwSlt+LPPpjgGFJLbb4KcqWpSpm3o12uLm+4y92G9m93wkCu0HkBPmlLCnx03uWbT0KIEOyaZ1UGdMwEbA3Ec4fW6R/ZAbxeUSOa1Q/PnEk5o3Pxen4ByZD66JLvRgIkTHqpnU0TFMepX+ww+Bg4X7RO0y2/aFDCE6wIwar5fWzfQiaFlfCdc5rHCj8sClx5+DMXDFTPNKbp6s+eTTU44Uf/o1h5GkR36sKimyilDOgpZa4ttb2vT9VpQ7wP44+7Et+JeI+k7Wi4cUVUyrXQOzxkllRNxKSiopVUGgH7IzrJJSjwQvQeGi8vKI1H7VeId2GCkFTTCK1AZB0kRMPz0IBoevt4HHtYWJdz8t/wbRwPaNRnh0eCDwt3iRCtc9aSgL9kHwAVp07MM89HuliwrDlFFng1D2umwvsDiKmvUnv/Illd8GjTZ3POBg/CJ9fos+SNQBdfsINDMhyWp7b9s8Bd3tH/rrLrG4hjXrFT10DRe+b5kc1uLCHaBLxQfWWlSRGVVUffTU15Vk57ylK16iFbuTEPwdbEGle3+dp7lfOqfi20TWV9GdH5PinisGwwaoAxVGQylquTFMYP9282vWqwi8YrxOVIFDbsNS/nBI3sruVKMqxp+n9dP5DHNKJ9/JMgAmEKnJ9MjHJTbA4aA8gCHTcGNP6h5dduoIO6mf3MRLGDgs5pfRcaFYaFWZZFRw1DuVOOD1odDAe3x9hXTI5f6+vYmfC5aOWG2TWKIJ0F3D7B0NLQp+QMC1KRHJ5MC0tWRJCqLg0Sxfh0OiLT3accJFLFJJQiuFzsBS45E2Zd90MOFAyobvicXzbAABDak6MSiR4VNQ7ynb/H4mj6l1tg1jaXGth3SnDg9tOiRkzvx/Ko84i4MNOUembgYuj1sy+TKh//T3Sen+H4EmhIDkVw/8JPcWgeOo+LW77xyJlyhOovdPxI74wHFb++Bbi26YSW3IzOe63qFDtuzbuzIjUmdV35YuW0TcfMlKXd19qoeElyuFSL+D5l+Ilwantyj98rXlKvkhmJ5Yp2RE20qMyhLokGX2LXEiReYinMI0o7XeBgaYsI2Fi4//rxz7O/nx91qXkqrG8IMz3yJmxqN8Q9PFlDRyFLjMg9EoMyKXldTpN4O6f2002uR2rcDfDMvT3ve9rNOF5+PDh7VE+h5DR7OC7wj6w9qeSRUobvGE5P93t7G2cz5JSnpRRV+7AEbfI2S1AtshNXknttzglX801/axCSnQaBWQ7OgMN23xymPB56cbkovGI0kn/grDjIVqHokkdJZt+hpbj/m4DelEE/BiZ0v642li1DJd+/HWeRkiZsdwg1xTvV+HX8il3HxqGgKYoeZK0xmIfHqGiY5ZivMewPOvyW0J3R0SoNc2yTTuSIpRuodlDFXpbZ9bt832XQh4t8BoUuUDzeAFQv4ziP+ivWFVhojrFUD6Z7t3c19v3zwhFhC06pra+jHmx7QaautzKnG1TNVnFr86cUDp33wEqX3pyqQyfwjs2LRGBTq6sfJgNVxZw/bG58Jxy2UFENZNExR8TD7BSf5ATJnW2FnVT/iFeFLBje5fsQ4jlkIEN2/vQuMynH8HjDjtXa5osMk7r41Udv4vVD45cIqdJOFNoCc5SXR+qj+Pk2U1UeXDROlWqurT/RvtHO0YcN6Kr3D+YF+uygWlSLUCFwztbF9PJWRmwEfEllBg7j8NehLG8cHc6tPhiHpEuxqAWgLIeu5YHJ/acdHD663zPKONHN33B3M8zSZeD+AvCcKulWRaeAhgI6Lbm1sqUHMnDjGLENg9EFhOns3DRAQDecaiWGLb5+IcQiwAxaqiJdspVS93kD+DvwHP9CH5KLVBdBb94w8HI5mD6ezpkmat4a322qIJwmwRKy4ZFihb7VR3f1mWO7MbfvLQ8R8RZcs7x4leFgV9lxbxU7R64CbQFepDSIJbu7EhIUmzgO32w9cXtyR2QIDU+rczQdAgdW9KF6M9QKWP7LH+DtwUUCzboG5bJHRDalmCc+KcTInndz7bvsbDt9RKdicgETU+6s9IlVJdTaYXa2pFXohuddkOLRKJ4GZUmz86FncXZ4UvY0kXuKEjjvKKBXIY3H3sv2tyGxUEVMYavQfvaH37rpPmV031tNYt6PZBmo+018rrpzrmaMFNgwZS8jDa88FrF9ytZdPN2P6YFDcnWF0XQIxdNHBHOeEq7X9/1nKfl0zP9J9LUGLamDY4K25aH1xx5P1movyiTakAM+CJ4ir2/dLxCNoCaEKQMLYoe1L1EPEp5k5h/aisbcVS3QY+Iay+m9EM20pXoHWgmZlLvoCT1e7g3YyrZEQdKifo4PzVTLrfZ3mLKJWsgRa+rs4SLGnn1n1Pp1R9ildMEQ/krbyQrH0Ql96RrH6XIxUKqrtgUphdY8aOmxj/iU5oAWNQVHIl0YA7Agr+j4rrmCvjBS/GFS78hjipVm2kTlRsGreGkfNLpgnTZHJ43ScrInUXRpbQb0LR2NZ2Nyv9XF9GHZEoN9uFKRjHEnJUt0+dZAwDrBbm0elEwSXXk06EAh2pnlY7vy5y3Pkie+4VcaCSt0bvI4Hqu54LUwy2Wcq/FRlkaxXiITPRWeOKVCEvOgcuW/ZDoB2WW/fh9ZHSKAWekLK3HAoQ2IOF7HY6B62kwgFrImDLEQb1HXsi9GWtrlLCW1gOPacnPck1TYsjVJESTrHOLgXR9h7YSxJn/hEFMIg9v/gR8MHyK9f30axuz2LllXVkwgJHJ9oTg3bhET15Qp9V8w7SaF3WWNpcOorsyogIteVHF/VbJEEHm+0kAk1w9HHXwoBVmke++NHGbBT3iPBPFEneZF8hIALBGb4xOXJfJkOMqcDnMHYuC7Y3a82gDoT8r9T0SuzaHPcM9Utkl1Pp3E3ZkChOH7CczYm5B8Zd6K2f8V3js5KJuBomptUIYeGZD9GCFvnYHaxyPzyhQPLXkxjhtSoYkGaV2X5uDes+DE5dVaO+o4kRJPzNPvQUrStBsdkmrQybUCmlmat5kGHFPytl01YgIJQay/jrzcvD+1oqWFRo48qXPjokhLH4vI+pBO7PBX7EtSx3pLPRHsTi3qQ9VpQfnmDZf8j/B2lJ4I8aw9HrU+ryLRlY9mXdw9tndU9JJ29y3O3encOoTXSQjGoWhF7HsDKx+q09qUNUyggKwyZ4E1vIjshF4crCPARHJzeCkEFU9F7tvq3z9jv4g3Sv6xaSJ3hgK3YMF+iV/KKRRe2sNzEpjzizSZsTOpFxlBwwSn1IV+fGQf1CUSac3l2EIXXTOhCWLRbm9Jg3pLgSq0zJukqTADiTaLY8TeByvPXu5G1q8IAVGZCoC2vl+dwmqo4E5DKuLfLq4EUmhPitNw+O2I2wkwlS62772rK+vpiu8czmCLjEBsS2mBbSeZ2jv3PJ5TFg3JOOUPuRMmYwgNbBX7HT+XSV5Xo8oW/vDY7OwL/td/oNcpVqlmLGYowuMdC9F0uTCpw07C3pdv0pD+JF4M75e+5lxiS0+H/prPRKq+bXzEw7qCU2T4O0dk5KT9D5iyX1XZwBCSAsiGygqFEkt2TxPbrTtUjPFDDX2HOi5utcb90KReQzVdCr/ukom6Rp65U39vaOT+/WR5tOeW9OQOYS33nDeEYtSnvFjMENR3039yMO/GW6APRW1VYAZ8NZJYG8iy0mP9ly5XpUFr+l6okN36lsHu0Jk4rnTat/tertEw18YEs1j8j2DXjU8T5C4aO8xFn/KoVyzTZ57Q4fUjxao7NbjReOfByI+jp3qJQG1YQOtSoH1a4sOLQB8y/wHlt768f1NwlR5+ruOl9HPxQVIeJdZ9ETeCW7svCOfyrSOSW3gPRs0ZI8LFDIUXLgzNK6P5tZleGpxmQlBoUIzjtxC9Vqz0EVuLGn2oDuikD49TLbzHMGR2+Vel/AwfwT3kxfPr5+X6CDbrifguOh6ze1qytV939dFQcq/U2g8s7wkk/+0Y1RjoThVyJ7AcoY1uTpEhPxaP5wdZuEN61Iq41Vyh6SgxptDeGqLEBMgREP4CSweUxFwikF7E+KMhHWn8qIu2URyX1fd26B5TteUDSC8rpK6ekED9iZ/lQIkVe8hEZJuOtC+Z8t+c+iWGg9e3CmCFu3gi9dRVch7l0+MHlmBdImGzGazQx0KfiRZex7lvv4S2B4ev9EjTiSTZDacNuCPutHO5uELHHpZ4jftWAWi8Uvb7rmp64+Qp0wYqmezwgsAuu7BHzuvkUqZJN1UbXuhl1q87fDH0py3AFW5O2c8VeUYGuPceRkWCHvN4jUzeoyYzb6+L+HNP2NNZpv7T09nR3+MTTm8UXJkXCahp1HrIowacd863HWVufX4dd3wI7rzwFCzoXECcgMNnQPbTaN/AuyFZQiS5uetS6uysbkbVRtfREFky+wf6Oc3wPjdvo+c+olwQiOFI4rELEXbaw1eafxfqiC6TWpC+Ks113IXMN4hKDB1/cxXi+tp3B1sWLDMork70GoWYEPEJqWv58iRuwLObqYsr76zGoJKX/q5x/2hmo1mcklXyjCHslT64HDPdhoNilkXRzfRxW1DADFGnvvycij17NLZ114VwXGCGGAedIPjrI3GrsRWpoj3LSkZhnM2HQYJJs+1tY5wRADBarNoMzZhAoH8GG8t/KGdOy0ReAMj/djBI07Uo3nivHTqfljeoPfXIcFa/BJC985QzF48ZmvvUpFciBtiOGrXkqq4lPf4ZHvZMxZErmDDa9+Jg3TbFa3kpOHm7QIcYPXset+qokBy/Pm61IgAZLwRmJSTH2FD1swDpCalc076VXgjAKSKGAP3BjFPuKchfuVL+fu0GW4a/g+5U0pEQFZ5aPH1HIM9zT1iympx4CS7YGEYYCDwzydhzIbHJ+EGxuvuh1dfZMuoRehl9Dip/lLwxNRMJNv3LHtcHY2ib3lPBi5f59UkTQBA89b+LfMDHnQ9dcSRsVUnikvlS0X8Rs5oxbvQUba139U9/PElh4L2fT2+FVNAE/zYIH/kKqFi5iZGbu4KYEMqo8JHulmOqQaFTBGnNYLJ3UV3mC32Hu3Od+Y0Yv0wjZBYZ/586wTxi57SxzhI/q7fouwspOEINUnOzVqvr5GiDNmv1jMebsiziU2B5BNN3t8qqwC3dpsHiCzZDSwdP/GEnHZDMoN1d31kjs3G4P2vj5mCjFysnl2OxEb/m/W6cJqAb30Sp5Bsytc6HRkCwU+Mi2Dg9OuDey6HF6XkOVKvoNrf5qWypuZ67cVF2HYkJYwvk2gRdx4A62xTeuMzFo34X/IpGZkCS1xAy2prGpKe2FVIm/tQ5uYnOr06dw9js5SKGKW9OHE/GH8Go+QQDyZz8RcnPPsQNeULR28o9SB8OGa6nQII6gvmnOdVW/kMe/98k2rkyy8LshwFlhw4Nq7tWGYLeocPQaHMEvD0E1lnrmgqSe/u1O6NzEb85raLAPS8+mqaxF8ASqa71YHbpusp4lUKhkSuLnwckDC5SlqlMLOXg7CX0Lls70B4PTzzYFvmBdXGvk3HjmN+Vr8+/4ugQm4NXq/uQY/CFAeKz3tozndxrfV5aldR0ak97uo/b3qoyEafBs9W5ZMi8rlTLRfkGaHm0qh+u1/T7o9QowJcXD0Lsd4eEOItHbCRIMcFsC6EbXQBtKP8324DeizCBcjeNdT+p9gJi+6vEjwETIkDmp4TB840btLdjiTTt1tjwjsLacNKiBKkUhlwckjRaXxKYVaemNzg+bI/8EJyHyCjW1a9X66ht7J17CSQl6eMNupW+QuPh+TMFkmpuCK2KTz0dkptmrZchVPgC0mrXPGZBlSHWmhLKBf4XMrFDT6XnvTJYKq5PsmUxfboZqMg6HH+uePDsKd+lSBaiPaBLNxSwFv6QFQBu9HnxpArYJZmzMYq9iWJ9oF5BtQPgDW62mJMaaFNtMWsKTS64fGme5LV6pCkQwjsMOxhfwWwy9Q/C9z4NipXWVHvYyvyg+M6gSTn6KMW+PVCGwKzS77kEXpo9nsUCUytgqiO/MYMZXHHC1ezsgeFunK8R2IIvi3QV/heKb16Evf6jwkXEOtyk5THjNBxOSFKbYcB7eABho3vMq/dbmD1IsbA+B+kyT6bZgxqzYHJPOFtZdlwT70kPvVHelcvR0c2B4kl5NZfUDLh/lK4ylt5auLg4nlLSszGT2pSjKbUVaxNarmhvqPKhDGVNQbYNvI11ww2ulOCzpZLOLMfL5Kj46EzI0/i2fiVjzWxsynMKQatGbHTK4tNByJ2I3LgcyT5F0vmjS8YV5AYfbLlehhvPe09Q4XA2AIl5TAo7yyItyJqfU9DRd9Lf0ousBSdeXTqa7qFzW0lD80MawCOVwKRmNlZlGSGREvmY+4DXOXtmNuDSeijSwbb8sBfJldvw2KdnkLAhOUlzAzQ2a1E26R7VIs86d7eXmlukio/zbtbomDucob36agwWXuV3m/NQtTdoE/ahCDDeFwPGT1xTWvXHM4Mj4C/X0VVpNdQarZ0t80rdtat2WheixHejFgxizB9/GD/gzt/AGt/nLNWxjVQi3k4Cc4lIaR080GeZqrtTG0OJLIweMdJhl6/bgwk2CtwWWePKlon0GG/Dii3+Ilh63pCVAbe66IUMEVIlWLyLse3rER4/TNjU+SlbNnN4Dq4bbE0kW0x8EiEIBFS7G7TFimzgyKtQ9jPABs0n/XivMfPtEq88prmNacUCaYydEG44gJF7+0ZT1FxcWgcRgXtX6A3NlqvHPsXwcxm5P5wJpQRZ/AFuO7GGkkZuCuZsgq1jV1EwGxku5oP6WzI4I06DooXJ0I0i7FN2ELNbgGhkwOvo+MtUuz9VfgkOX70Y+ECZECl/lxsTox2zGSZf4ceNaT2qNaUzq87v33QTGG5lnuMoPXwKIBHKhbYER6bPq03CWmZvUah3TaqD3azbJlwbrfXqMFzw8zfbU7VQzSDvT10ZBBmqdEpHC5JYmXABxGnZp5Xn35DDIdchcTjWF+bS0C8wFsu1QPQCJE0PIm1lseAsMVeH+Jcqarn6r8hQ+cYqAl6wp2C/e6hY8BiMxt60JU2a2U5VFfCix+UTehKTAFgBJ4QeXS0PugWeK9aDnygR9Kvi1+XfKC3J5LHEc0BVeOxOmKX73gIyRbiHv/PilywaSudkv2YrSomupiImAJ9dj6T7fsIo2nRGaLxAXMjD5jZwF2/+ZLn3BElkfK0TJE/ECQIAWVGC9Ak9/iECJWjFoEOXhsA9g8IgIW8Ks/FjRTGSz9wlO34S+rAqr1p1YSzHGIfXHACNpNDiUba5USZNgXSQuAFWwXx2MAJw16WeI7Tg5s5U0JO3v+FnqcA56MA8mIet5Cizms5i0+sVEAA2eE0a5+98EzOqrvDAPki8RY1p7ZU/fjCoLdtoKkLBK/S/NXEKBbdM8h8zfhlGTjx4c6OrOoPlkfUB4UHV824MlN2WSYdBA2ysDuexWnr/kjjxR70oitKVqI/asttBaxfZqmV6o5A9TH2qQypbqKjeE+DaIuzLVfASW8zNsnZV2DSjzg5/vmRSsV3aXV4PDFB+vEybeQW7dodPk0YxjwzdkpDN4EQ5+VUvwJr8VZeLBYwYNOoV7i6P9YPBimpPsx6JOGbUV8DMi4ZbW4gJwzGdSOSdISuH+83T/UWaoNz8MqMu+99BBhrS6V9dnXX2y0IxeeYIKgblHn08ZggJA/eHUkNpiLX95Rj/Tv8EF3L9+24EYD5fnlQTXPUJZzTts0k43b2B2HSitGVfxRNGvWTQKPpIRWztEZIShY+poNrkmD+LWzFdWbFWwta5/juTLiHHo8pJsPFHRr05Nl4CWhPPjjHwivRCT9JLQuCyXe6oR3vEDA4W7Epv+eBWob8cs3B2r+DDBfYV7kQZZ+HceUBPA1Yoa6hjyj+2g3lcApYMi6wZkFxR0iqt8aOaiyh81rCkh+4ukeNsMKbbLFB8RIwpgGrLddYczY0xRebArzXplqTRV6C6SefPNIodToKm2AYpRk0hocWqf+RjbNcIdeDNncmxRJ1Tpxc5dOP1R3sxHXrfab1FezLZQFlihKL800V/cLPUBl9z2RNOnA8vTV9pYDshLd4zP3wct7/hlUUH+koyeYUyxyehPgHLPaYn3trXANmzAhkmsnN0LkB8nVxPAmt6eGJ2jfnUhoglk03j4+56cmYloslx6Kkktcrt3wgLJh8QIv5WDhlmc8XjuzG5D+oj0akClCum6Pqz4vRdzTEKtjB5NiatCQMOb7PL2ttADzG8uUbXtAuIYU3b+Zt0GmBYRjl1FPKr4QKrGWOtW3C1nBVfSxlEvsirNUjIDWcH/bVZRLALv63dVXbkDiZA7La0TnQVCLdol+8IXrI6+hJD+9Zus16vF5KqYwqsMxDzJ+iXn01KGrRmMGfEv7r3zUvihJSJ11OuN6oKdc/9l8bA/SnGSJQ+P0CiMB4XFa8ow6SoK2KRhLRAlnO476pPzW7zaH4auMpAsR7Eq86CgoccunrurMFGAA7qwByH8hBqZF6hQaM5i9Y6g7+BnReFXrJjcB7QaIGCPu2P5GRjOSov1RpzH586yztP2LeFxRVHkPQWyJtAOPrI8RNkXyJ0+269qmOUu6/46sESva/MdcZZiveZDdy8W1cwUpItoTVIxD6YCfpeMFZgF3hHLg10YTNXpnDmpAM07p5sZ3rOS3uHsHhR8ujUfTiSPxwq0Eqv8bY0W4Jgtij1mFT8UvtyZzdlwfL2Bg5le2Mq1G9Mf7ooKeZZs5IrG4wLEnEuE5sN+Lnyqy7iYQ2aeukw3Kqy/q0lIfmYJjvh4TNVaZXBcjqDRG2Q/p9iinfzN40ssKryUrVmyEWliV76i+cocVHWluCeJrTZR++mVy3x9ZGIZJn4UwHmd8zttPJr0gNJWDXkjuNuPOPFSgFtvZu2vccGzyRYUPz1D5AsJPLhvHgnfZmKkjQT+OkIObJHIa0jFYMcxJ3nugCwFKBOZICAC8bYUQPHOFwpHc4P2BJo7FIT6O/sJnd5LgOqC+jBzSbMaiA8aCXHciEwRsP2TfW/mhW6ZwXySquNk6f2Cbpfa+Zi4YUvkZu6E3wI8rRS0PmjXtWMDihTfr5mEC6BkqAXnOaKfHZQBgh0w4T/zsg64gqrJUOiXqeL/clS1ZLXTxNRSAH/tbz+1F069po6Fv7TYoJTfD+FTCBDEDM3hJUDNifVTGNuKRfYslAA/6qgAAA==" alt="Capacitación Ventas Inteligentes con Coaching e IA para el equipo de El Arca de Noé" loading="lazy" width="600" height="338">
+    <div class="in">
+     <div class="chips"><span class="chip g">Empresas</span><span class="chip g">A medida</span></div>
+     <h3>Ventas Inteligentes con Coaching e IA</h3>
+     <div class="meta">Presencial o virtual · Fechas según tu equipo</div>
+     <p>Neuroventas, prospección con IA, escucha activa y cierre con confianza.</p>
+     <a class="btn" href="https://wa.me/543875916465?text=Hola%20Gabriela%2C%20quisiera%20informaci%C3%B3n%20sobre%20capacitaci%C3%B3n%20para%20mi%20equipo.">Pedí una propuesta</a>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="empresas" class="section dark" data-section="empresas">
+ <div class="wrap biz">
+  <div class="copy rv">
+   <div class="eyebrow">Capacitación para empresas</div>
+   <h2>Equipos comerciales que escuchan mejor y venden con claridad.</h2>
+   <p class="lead">Una formación práctica que une coaching ontológico e inteligencia artificial para mejorar cada conversación con clientes.</p>
+   <ul class="topics">
+    <li>Neuroventas</li><li>Prospección con IA</li><li>Escucha activa</li><li>Cierre con confianza</li>
+   </ul>
+   <div class="actions"><a class="btn" id="contacto-charlas" href="https://wa.me/543875916465?text=Hola%20Gabriela%2C%20quisiera%20informaci%C3%B3n%20sobre%20capacitaciones%20o%20charlas.">Consultá por tu equipo</a></div>
+  </div>
+  <div class="rv"><img src="https://app.orkestic.com/objects/quick-uploads/2033/e0abe7c48f9bf199.jpg" alt="Gabriela Ballerini durante una capacitación" loading="lazy"></div>
+ </div>
+</section>
+
+<section id="galeria" class="section" data-section="galeria">
+ <div class="wrap rv"><div class="eyebrow">Galería</div><h2>Encuentros que dejan huella</h2></div>
+ <div class="marquee" id="marquee" aria-label="Galería de fotos de charlas y capacitaciones">
+  <div class="track"><img src="https://app.orkestic.com/objects/quick-uploads/2033/18083d99006d6ee0.jpg" alt="Encuentro de formación y capacitación con Gabriela Ballerini" loading="lazy" width="900" height="600"><img src="https://app.orkestic.com/objects/quick-uploads/2033/3671db1392db71c6.jpg" alt="Encuentro de formación y capacitación con Gabriela Ballerini" loading="lazy" width="900" height="600"><img src="https://app.orkestic.com/objects/quick-uploads/2033/2bd73b2f7e3016c6.jpg" alt="Encuentro de formación y capacitación con Gabriela Ballerini" loading="lazy" width="900" height="600"><img src="https://app.orkestic.com/objects/quick-uploads/2033/0fd4b41915770de0.jpg" alt="Encuentro de formación y capacitación con Gabriela Ballerini" loading="lazy" width="900" height="600"><img src="https://app.orkestic.com/objects/quick-uploads/2033/2a258d3230dd6f2d.jpg" alt="Encuentro de formación y capacitación con Gabriela Ballerini" loading="lazy" width="900" height="600"><img src="https://app.orkestic.com/objects/quick-uploads/2033/70ab4a3d5c215753.jpg" alt="Encuentro de formación y capacitación con Gabriela Ballerini" loading="lazy" width="900" height="600"></div>
+ </div>
+ <div class="wrap"><button type="button" class="gal-ctrl" id="galBtn">Pausar galería</button></div>
+</section>
+
+<section id="ebook" class="section ebook" data-section="ebook">
+ <div class="wrap ebook-grid">
+  <div class="ebook-cover rv">
+   <img src="https://app.orkestic.com/objects/quick-uploads/2033/15f2a424c170e627.jpg" alt="Portada del ebook Autoestima y Confianza" loading="lazy">
+  </div>
+  <div class="rv">
+   <div class="ebook-badge">NUEVO EBOOK</div>
+   <div class="eyebrow" style="color:#F5C21B;margin-bottom:10px">Guía práctica para recuperar tu voz</div>
+   <h2 class="ebook-title">Autoestima y Confianza</h2>
+   <div class="ebook-sub">Guía práctica en 8 módulos para superar la violencia narcisista</div>
+   <p class="lead">Recupera tu identidad, pon límites sin culpa y vuelve a ser protagonista de tu vida. 34 páginas con ejercicios, Mapa de la Empatía, Rueda de la Vida, Diagrama de Límites y un plan de acción de 90 días.</p>
+   <div class="ebook-price">$100</div>
+   <div class="ebook-note">PDF descargable · Pago con Mercado Pago</div>
+   <div class="actions">
+    <a class="btn" href="https://app.orkestic.com/shop/gabriela-ballerini-coach?product=EBOOK-AYC-01">Comprar ebook</a>
+    <a class="btn ghost" href="https://app.orkestic.com/p/cNA45TT">Ver más</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="contenido-redes" class="section rose" data-section="contenido">
+ <div class="wrap">
+  <div class="rv"><div class="eyebrow">Contenido gratuito</div><h2>Seguí aprendiendo conmigo</h2><p class="lead">Videos y reflexiones sobre autoestima, vínculos, límites y confianza.</p></div>
+  <div class="channels">
+   <a class="ch rv" href="https://www.youtube.com/channel/UCCY21IA8imU__bBM48EJASw"><div class="tag">YouTube</div><h3>Videos en profundidad</h3><p>Ideas y herramientas para tu proceso.</p></a>
+   <a class="ch rv" href="https://www.instagram.com/gabrielaballeriniok/"><div class="tag">Instagram</div><h3>@gabrielaballeriniok</h3><p>Reflexiones y carruseles semanales.</p></a>
+   <a class="ch rv" href="https://www.tiktok.com/@gabrielaballerini"><div class="tag">TikTok</div><h3>@gabrielaballerini</h3><p>Videos cortos para empezar hoy.</p></a>
+  </div>
+ </div>
+</section>
+
+<section class="final" data-section="cierre">
+ <img src="https://app.orkestic.com/objects/quick-uploads/2033/e0abe7c48f9bf199.jpg" alt="" loading="lazy">
+ <div class="wrap rv">
+  <div class="eyebrow">Tu nueva etapa empieza con una decisión</div>
+  <h2>¿Empezamos a construirla juntas?</h2>
+  <p class="lead">Contame dónde estás hoy y vemos cuál es el mejor primer paso para vos.</p>
+  <div class="actions"><a class="btn" href="https://subscribepage.io/SesiondeCoaching">Consultá por una sesión</a><a class="btn ghost" href="https://wa.me/543875916465?text=Hola%20Gabriela%2C%20quisiera%20hacerte%20una%20consulta.">Escribime por WhatsApp</a></div>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <div class="wrap fcols">
+  <div><a class="logo" href="#contenido"><span class="brandlogo" role="img" aria-label="Gabriela Ballerini Coach"></span></a><p>Coaching ontológico para volver a confiar en vos y construir una nueva etapa.</p></div>
+  <div><h4>Experiencias</h4><ul><li><a href="https://subscribepage.io/SesiondeCoaching">Sesiones individuales</a></li><li><a href="#eventos">Workshop</a></li><li><a href="#empresas">Empresas</a></li><li><a href="#contacto-charlas">Charlas</a></li></ul></div>
+  <div><h4>Conocé más</h4><ul><li><a href="#sobre-mi">Sobre mí</a></li><li><a href="#pilares">Lo que trabajamos</a></li><li><a href="#galeria">Galería</a></li></ul></div>
+  <div><h4>Seguime</h4><ul><li><a href="https://www.youtube.com/channel/UCCY21IA8imU__bBM48EJASw">YouTube</a></li><li><a href="https://www.instagram.com/gabrielaballeriniok/">Instagram</a></li><li><a href="https://www.tiktok.com/@gabrielaballerini">TikTok</a></li><li><a href="https://wa.me/543875916465">WhatsApp</a></li></ul></div>
+ </div>
+ <div class="wrap legal">© 2026 Gabriela Ballerini · Salta, Argentina</div>
+</footer>
+
+<a class="wa" href="https://wa.me/543875916465?text=Hola%20Gabriela%2C%20quisiera%20hacerte%20una%20consulta." aria-label="Escribime por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C8.86 3 3.03 8.82 3.03 16c0 2.29.6 4.53 1.74 6.5L3 29l6.68-1.75A12.95 12.95 0 0 0 16.04 29C23.2 29 29 23.18 29 16S23.2 3 16.04 3Zm0 23.7c-2.02 0-4-.54-5.72-1.57l-.41-.24-3.96 1.04 1.06-3.86-.27-.4A10.68 10.68 0 0 1 5.33 16c0-5.9 4.8-10.7 10.71-10.7 5.9 0 10.66 4.8 10.66 10.7 0 5.9-4.78 10.7-10.66 10.7Zm5.86-8.02c-.32-.16-1.9-.94-2.2-1.04-.29-.11-.5-.16-.72.16-.21.32-.83 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.66s1.15 3.09 1.31 3.3c.16.21 2.26 3.45 5.47 4.84.77.33 1.36.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.61-.37Z"/></svg></a>
+
+<script>
+(()=>{
+ const tr=document.querySelector('.track');[...tr.children].forEach(c=>{const n=c.cloneNode(true);n.alt='';n.setAttribute('aria-hidden','true');tr.appendChild(n)});
+ const b=document.querySelector('.burger'),m=document.getElementById('menu');
+ b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}));
+ const s=document.getElementById('slider');
+ document.querySelectorAll('[data-dir]').forEach(btn=>btn.addEventListener('click',()=>{const w=s.firstElementChild.getBoundingClientRect().width+20;s.scrollBy({left:w*btn.dataset.dir,behavior:'smooth'})}));
+ const mq=document.getElementById('marquee'),gb=document.getElementById('galBtn');
+ gb.addEventListener('click',()=>{const p=mq.classList.toggle('paused');gb.textContent=p?'Reproducir galería':'Pausar galería'});
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+})();
+</script>
+</body>
+</html>
