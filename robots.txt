@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Argemsalta.github.io/gabriela-ballerini-web-nueva-propuesta/sitemap.xml
